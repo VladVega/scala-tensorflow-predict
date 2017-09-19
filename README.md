@@ -17,4 +17,6 @@ message PFeaturesForPredict {
   )
   saved_model_dir = classifier.export_savedmodel("/tmp/exported_models", serving_input_receiver_fn)
 ```
+3. Check out the schema of your saved model for input/output names by executing the tensorflow command line utility:
+`saved_model_cli show --dir /tmp/saved_model_dir --tag_set serve --signature_def serving_default`
 
