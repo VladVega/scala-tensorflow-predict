@@ -19,4 +19,5 @@ message PFeaturesForPredict {
 ```
 3. Check out the schema of your saved model for input/output names by executing the tensorflow command line utility:
 `saved_model_cli show --dir /tmp/saved_model_dir --tag_set serve --signature_def serving_default`
+4. Test your saved model by executing a prediction like this: https://stackoverflow.com/a/46248438 (I verified that this works)
 
